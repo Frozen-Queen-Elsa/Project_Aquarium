@@ -1,0 +1,360 @@
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600";
+@import url(//fonts.googleapis.com/icon?family=Material+Icons);
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 22px;
+    display: inline-block;
+    line-height: 1px;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#ticket ul {
+    list-style-type: square;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#ticket small {
+    font-size: 12px;
+    font-style: italic
+}
+
+#ticket h3 {
+    color: rgb(24, 181, 253);
+}
+
+#ticket h4 {
+    color: #09f;
+    font-weight: 600;
+}
+
+#ticket strong {
+    color: #09f;
+}
+
+#ticket hr {
+    border: 1px dashed blue;
+}
+
+#ticket .intro {
+    color: black
+}
+
+#ticket .content-block {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+#ticket {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: #f4f4f4;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+
+.flex {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+#ticket img {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#ticket .content-block img {
+    width: 50%;
+    height: auto;
+}
+
+#ticket .card {
+    margin: 0px 30px;
+    width: 380px;
+    height: 600px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #FFF;
+    box-shadow: 0 19px 48px rgba(0, 0, 0, 0.3), 0 15px 32px rgba(0, 0, 0, 0.22);
+}
+
+#ticket .card .header {
+    height: 200px;
+    width: 100%;
+    background-color: #4426a8;
+    position: relative;
+    background-image: url("../img/card_01.jpg");
+    background-size: cover;
+    background-position: center top;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+}
+
+#ticket .card .header.collapse {
+    height: 0px;
+}
+
+#ticket .card .header .title {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0px 15px;
+}
+
+#ticket .card .header .title h1 {
+    margin: 0px;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#ticket .card .header .title h6 {
+    font-size: 16px;
+    color: #644cad;
+    margin: 0;
+}
+
+#ticket .card .header .title h6 span {
+    color: #FFF;
+}
+
+#ticket .card .header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 380px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-image: url(../img/card.png);
+}
+
+#ticket .card .content {
+    height: 400px;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 20px 30px 30px 30px;
+    position: relative;
+    background-color: #FAFAFA;
+    overflow-y: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+}
+
+#ticket .card .content.full {
+    height: 600px;
+    overflow-y: scroll;
+}
+
+#ticket .card .content.full .articlemeta {
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+#ticket .card .content.full .closebar {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+#ticket .card .content.full .closebar h1 {
+    opacity: 1;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#ticket .card .content .closebar {
+    padding: 0px 20px;
+    transform: translateY(-30px);
+    opacity: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #FFF;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #EEE;
+}
+
+#ticket .card .content .closebar .closebttn {
+    position: absolute;
+    right: 15px;
+    top: -2px;
+}
+
+#ticket .card .content .closebar h1 {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+    opacity: 0;
+    margin: 0px;
+    padding: 0px;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#ticket .card .content .articlemeta {
+    position: absolute;
+    z-index: 99999;
+    background: #FFF;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 3px;
+    border-top: 1px solid #EEE;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#ticket .card .content .articlemeta:before {
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 100%;
+    top: -41px;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 90%, white 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 90%, white 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 90%, white 100%);
+}
+
+#ticket .card .content .articlemeta ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#ticket .card .content .articlemeta ul.left {
+    float: left;
+}
+
+#ticket .card .content .articlemeta ul.left li {
+    border-right: 1px solid #EEE;
+}
+
+#ticket .card .content .articlemeta ul.right {
+    float: right;
+}
+
+#ticket .card .content .articlemeta ul.right li {
+    border-left: 1px solid #EEE;
+}
+
+#ticket .card .content .articlemeta ul li {
+    display: inline-block;
+    padding: 12px 15px 16px;
+    cursor: pointer;
+}
+
+#ticket .card .content .articlemeta ul li:hover .material-icons {
+    color: #644cad;
+}
+
+#ticket .card .content .articlemeta ul .material-icons {
+    margin-right: 5px;
+}
+
+#ticket .card .content .bttn {
+    display: block;
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #1e76e3;
+    text-decoration: none;
+    color: #FFF;
+    transition: 300ms all;
+}
+
+#ticket .card .content .bttn:hover {
+    background-color: #1a6ace;
+}
+
+#ticket .card .content .readmore {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: 300ms all;
+    color: #333;
+}
+
+#ticket .card .content .readmore:after {
+    opacity: 0;
+    text-align: center;
+    content: 'Tap to read more';
+    font-size: 22px;
+    position: absolute;
+    display: block;
+    width: 50%;
+    padding: 10px 25px;
+    background-color: #EEE;
+    border: 1px solid #DDD;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 150px;
+    transition: 300ms all;
+    transform: translateY(20px);
+}
+
+#ticket .card .content .readmore:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+    box-shadow: rgba(65, 92, 105, 0.0588235) 0px 1.5px 13px;
+}
+
+#ticket .card .content p {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#ticket .card .content p:first-of-type {
+    margin-top: 0px;
+}
+
+@media (max-width: 767px) {
+    #ticket .card .content .readmore:after {
+        opacity: 1;
+        text-align: center;
+        content: 'Tap to read more';
+        font-size: 22px;
+        color: #EEE;
+        position: absolute;
+        display: block;
+        width: 50%;
+        padding: 10px 25px;
+        background-color: #333;
+        border: 1px solid #555;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: 150px;
+        transition: 300ms all;
+        transform: translateY(0px);
+    }
+}
