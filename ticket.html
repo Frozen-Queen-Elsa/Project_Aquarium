@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Adaptive tabs</title>
+    <title>Nexus Aquarium Ticket</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -19,66 +19,169 @@
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
 
-    <link rel="stylesheet" href="css/tabbar.css">
+    <link rel="stylesheet" href="css/ticket.css">
 
 
 </head>
 
 <body>
-    <div class="ticket">
-        <div class="header">
-            <div class="container">
-                <nav class="navbar navbar-inverse" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                        <a href="#" class="navbar-brand scroll-top">
-                            <div class="logo"></div>
-                        </a>
-                    </div>
-                    <!--.navbar-header -->
-                    <div id="main-nav" class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#" class="scroll-top">Home</a></li>
-                            <li><a href="#" class="scroll-link" data-id="about">About Us</a></li>
-                            <li><a href="#" class="scroll-link" data-id="portfolio">Portfolio</a></li>
-                            <li><a href="#" class="scroll-link" data-id="blog">Blog</a></li>
-                            <li><a href="#" class="scroll-link" data-id="contact">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <!--/.navbar-collapse-->
-                </nav>
-                <!--/.navbar-->
-            </div>
-            <!--/.container-->
+                    <a href="#" class="navbar-brand scroll-top">
+                        <div class="logo"></div>
+                    </a>
+                </div>
+                <!--.navbar-header -->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" class="scroll-top">Home</a></li>
+                        <li><a href="#" class="scroll-link" data-id="about">About Us</a></li>
+                        <li><a href="#" class="scroll-link" data-id="portfolio">Portfolio</a></li>
+                        <li><a href="#" class="scroll-link" data-id="blog">Blog</a></li>
+                        <li><a href="#" class="scroll-link" data-id="contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse-->
+            </nav>
+            <!--/.navbar-->
         </div>
-        <!--/.header-->
-
-        <!-- Tab Bar -->
-        <div class="tabbar">
-
+        <!--/.container-->
+    </div>
+    <!--/.header-->
 
 
-            <section class="wrapper">
-                <ul class="tabs">
-                    <li class="active">Ticket Information</li>
-                    <li>Openning Hour</li>
-                    <li>Annual Pass</li>
-                    <li>Group Booking</li>
+    <section class="cd-hero">
+        <ul class="cd-hero-slider autoplay">
+            <!-- 
+                    <ul class="cd-hero-slider autoplay"> for slider auto play 
+                    <ul class="cd-hero-slider"> for disabled auto play
+                -->
+            <li class="selected first-slide">
+                <div class="cd-full-width">
+                    <div class="tm-slide-content-div slide-caption">
+                        <span>Introduction to</span>
+                        <h2>Nexus Aquarium</h2>
+                        <p>One of the biggest aquarium in the world</p>
+                        <div class="primary-button">
+                            <a href="#" class="scroll-link" data-id="about">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- .cd-full-width -->
+            </li>
+
+            <li class="second-slide">
+                <div class="cd-full-width">
+                    <div class="tm-slide-content-div slide-caption">
+                        <span>Introduction to</span>
+                        <h2>Underwater Zoo</h2>
+                        <p>Visit us . One of the biggest Underwater Zoo in the world</p>
+                        <div class="primary-button">
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- .cd-full-width -->
+            </li>
+
+            <li class="third-slide">
+                <div class="cd-full-width">
+                    <div class="tm-slide-content-div slide-caption">
+                        <span>SEE THE WORLD</span>
+                        <h2>From Below the Surface</h2>
+                        <p>It's not a box of water. It's a world of it's own
+                            <</p>
+                                <div class="primary-button">
+                                    <a href="#">View Details</a>
+                                </div>
+                    </div>
+                </div>
+                <!-- .cd-full-width -->
+            </li>
+        </ul>
+        <!-- .cd-hero-slider -->
+
+        <div class="cd-slider-nav">
+            <nav>
+                <span class="cd-marker item-1"></span>
+
+                <ul>
+                    <li class="selected">
+                        <a href="#0"></a>
+                    </li>
+                    <li>
+                        <a href="#0"></a>
+                    </li>
+                    <li>
+                        <a href="#0"></a>
+                    </li>
                 </ul>
+            </nav>
+        </div>
+        <!-- .cd-slider-nav -->
+    </section>
+    <!-- .cd-hero -->
 
-                <ul class="tab__content">
-                    <li class="active">
-                        <div class="content__wrapper">
-                            <h2 class="text-color">Ticket Information</h2>
-                            <div class="row content-block">
-                                <h2>Tickets and Experiences</h2>
+
+    <!-- Tab Bar -->
+    <div id="ticket" class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <br>
+                        <h3>Visit Us</h3>
+                        <div class="line-dec"></div>
+                    </div>
+                    <!-- .section-heading -->
+                </div>
+                <!-- .col-md-12 -->
+            </div>
+            <!-- .row -->
+
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="flex">
+                        <div class="card">
+                            <div class="header">
+                                <div class="title">
+                                    <div class="row content-block">
+                                        <h1>Ticket Information</h1>
+                                        <h6><span>Visit</span> Nexus Aquarium</h6>
+                                    </div>
+                                    <!-- .row .content-block -->
+                                </div>
+                                <!-- .title -->
+                            </div>
+                            <!-- .header -->
+                            <div class="content">
+                                <div class="articlemeta">
+                                    <ul class="left">
+                                        <li><i class="material-icons">&#xE15E;</i></li>
+                                        <li><i class="material-icons">&#xE87D;</i></li>
+                                    </ul>
+                                    <ul class="right">
+                                        <li><i class="material-icons">&#xE80D;</i></li>
+                                    </ul>
+                                </div>
+                                <!-- .articlemeta -->
+                                <div class="closebar">
+                                    <h1>Ticket Information</h1>
+                                    <a href="#0" class="closebttn"><i class="material-icons">&#xE5CD;</i></a>
+                                </div>
+                                <!-- .closebar -->
                                 <div class="row content-block">
-                                    <h4>VIP Explorer Experience</h4>
+                                    <h3>VIP Explorer Experience</h3>
+                                    <img src="img/ticket_00.jpg" width="50%" height="auto" title="ticket" alt="e-ticket" />
                                     <ul>
                                         <li>Skip the Queue line</li>
                                         <li>Aquarium Tunnel</li>
@@ -95,9 +198,10 @@
                                         <br /> * Children under 3 years of age free of charge
                                         <br /> * Children under 16 years of age must be accompanied by an adult (16+ years old)</p>
                                 </div>
+                                <!-- .row .content-block -->
                                 <hr>
                                 <div class="row content-block">
-                                    <h4>Explorer Experience</h4>
+                                    <h3>Explorer Experience</h3>
                                     <ul>
                                         <li>Aquarium Tunnel</li>
                                         <li>Underwater Zoo</li>
@@ -112,9 +216,10 @@
                                         <br /> * Children under 3 years of age free of charge
                                         <br /> * Children under 16 years of age must be accompanied by an adult (16+ years old)</p>
                                 </div>
+                                <!-- .row .content-block -->
                                 <hr>
                                 <div class="row content-block">
-                                    <h4>Dubai Aquarium &amp; Aqua Nursery</h4>
+                                    <h3>Dubai Aquarium &amp; Aqua Nursery</h3>
                                     <ul>
                                         <li>Aquarium Tunnel</li>
                                         <li>Underwater Zoo</li>
@@ -125,9 +230,10 @@
                                     <p class="small">* Children under 3 years of age are free of charge
                                         <br /> * Children under 16 years of age must be accompanied by an adult (16+ years old)</p>
                                 </div>
+                                <!-- .row .content-block -->
                                 <hr>
                                 <div class="row content-block">
-                                    <h4>All Access Pass</h4>
+                                    <h3>All Access Pass</h3>
                                     <ul>
                                         <li>1 Hour Private Guided Tour (4-6 guests only)</li>
                                         <li>Aquarium Tunnel</li>
@@ -149,10 +255,11 @@
                                         <br /> * Guests should arrive 10 minutes before the scheduled time
                                         <br /> * Subject to availability</p>
                                 </div>
+                                <!-- .row .content-block -->
                                 <hr>
                                 <div class="row content-block">
-                                    <img src="/en/Images/bambool2_tcm140-134749.jpg" title="eCroc" alt="Shark Trainer Encounter" class="imgright" />
-                                    <h4>Shark Trainer Encounter</h4>
+                                    <h3>Shark Trainer Encounter</h3>
+                                    <img src="img/ticket_01.jpg" width="50%" height="auto" title="eCroc" alt="Shark Trainer Encounter" />
                                     <ul>
                                         <li>Shark Trainer Experience</li>
                                         <li>Aquarium Tunnel</li>
@@ -168,10 +275,11 @@
                                         <br /> * Subject to availability
                                         <br /> * Guests should arrive 15 minutes before the scheduled time</p>
                                 </div>
+                                <!-- .row .content-block -->
                                 <hr>
                                 <div class="row content-block">
-                                    <img src="/en/Images/ticket-promo-CROC_tcm140-130431.jpg" title="eCroc" alt="e-croc" class="imgright" />
-                                    <h4>King Croc Encounter</h4>
+                                    <h3>King Croc Encounter</h3>
+                                    <img src="img/ticket_02.jpg" width="50%" height="auto" title="eCroc" alt="e-croc" />
                                     <ul>
                                         <li>Crocs Tour &amp; Bird Feeding</li>
                                         <li>Aquarium Tunnel</li>
@@ -186,10 +294,11 @@
                                         <br /> * Subject to availability.
                                         <br /> * Guests should arrive 30 minutes before the scheduled time.</p>
                                 </div>
+                                <!-- .row .content-block -->
                                 <hr>
                                 <div class="row content-block">
-                                    <img src="/en/Images/ticket-promo-rays_tcm140-130418.jpg" title="eRay" alt="e-croc" class="imgright" />
-                                    <h4>Ray Encounter</h4>
+                                    <h3>Ray Encounter</h3>
+                                    <img src="img/ticket_03.jpg" width="50%" height="auto" title="eRay" alt="e-croc" />
                                     <ul>
                                         <li>Ray Feeding</li>
                                         <li>Aquarium Tunnel</li>
@@ -205,10 +314,11 @@
                                         <br /> * Subject to availability
                                         <br /> * Guests should arrive 15 minutes before the scheduled time</p>
                                 </div>
+                                <!-- .row .content-block -->
                                 <hr>
                                 <div class="row content-block">
-                                    <img src="/en/Images/ticket-promo-otter_tcm140-130421.jpg" title="eOtter" alt="e-croc" class="imgright" />
-                                    <h4>Otter Encounter</h4>
+                                    <h3>Otter Encounter</h3>
+                                    <img src="img/ticket_04.jpg" width="50%" height="auto" title="eOtter" alt="e-croc" />
                                     <ul>
                                         <li>Otter Meet &amp; Greet Experience</li>
                                         <li>Aquarium Tunnel</li>
@@ -223,11 +333,12 @@
                                         <br /> * Children under 3 years of age free of charge
                                         <br /> * Children under 16 years of age must be accompanied by an adult (16+ years old)</p>
                                 </div>
+                                <!-- .row .content-block -->
                                 <hr>
                                 <div class="row content-block">
-                                    <img src="/en/Images/ticket-promo-shark_tcm140-130419.jpg" title="eShark" alt="e-croc" class="imgright" />
-                                    <h4>Shark Encounter (caged)
-                                        <br /></h4>
+                                    <h3>Shark Encounter (caged)
+                                        <br /></h3>
+                                    <img src="img/ticket_05.jpg" width="50%" height="auto" title="eShark" alt="e-croc" />
                                     <ul>
                                         <li>Only one session daily at 2:00pm during sharks feeding and free admission to:</li>
                                         <li>Aquarium Tunnel</li>
@@ -246,51 +357,307 @@
                                         <br /> *Guests must be within the activity area at 1.00 pm, 60 minutes before the scheduled time.
                                         <br /></p>
                                 </div>
-
+                                <!-- .row .content-block -->
+                                <a href="#0" class="bttn">Book Now</a>
+                                <a href="#0" class="readmore"></a>
                             </div>
-                    </li>
-                    <li>
-                        <div class="content__wrapper">
-                            <h2 class="text-color">Openning Hour</h2>
-
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fugiat totam illum laborum consectetur earum cumque, commodi, rem, molestias inventore quod rerum vero facilis sequi veritatis aut nisi assumenda delectus? Dignissimos
-                                perspiciatis magnam modi corrupti dolorum officia dicta velit aliquid at distinctio corporis natus aut eum repellat beatae eos, quia numquam labore possimus ipsam! Cum molestiae quidem maiores cumque similique? Accusantium
-                                modi sapiente, cumque, pariatur rerum dolorum similique iste, delectus at perspiciatis veniam ad saepe natus! Quae tempora totam numquam enim illum nobis, placeat optio debitis sit magni quod! Ut. Hic repellendus quaerat
-                                sed, excepturi labore voluptates, quia quos cum quisquam eaque eveniet rem ducimus libero iste facilis neque unde facere corporis optio. Consectetur, in facere rerum quia incidunt ut!</p>
+                            <!-- .content -->
                         </div>
-                    </li>
-                    <li>
-                        <div class="content__wrapper">
-                            <h2 class="text-color">Annual Pass</h2>
+                        <!-- .card -->
+                    </div>
+                    <!-- .flex -->
+                </div>
+                <!-- .col-md-6 .col-sm-6 .col-xs-12 -->
 
-                            <p>Created by <a class="text-color" href="http://lewihussey.com" target="_blank">Lewi Hussey</a></p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quibusdam veritatis labore nemo cum voluptate in quod nisi amet harum eum, porro, est fugit iusto dolorem tenetur minus ab adipisci! Rerum fugiat magnam perspiciatis
-                                dolorum voluptates omnis quas iure dolores eveniet veritatis numquam ratione quasi in dolorem, nihil sequi quae autem, delectus amet esse sunt error libero. Eos, possimus delectus? Optio molestiae hic commodi fugiat deserunt
-                                dicta repellendus illo assumenda corrupti reiciendis veritatis officiis dolores vel pariatur blanditiis, ducimus eum mollitia nostrum velit in inventore culpa tempore necessitatibus. Eligendi, ab.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quae cumque mollitia et odit esse ea velit nulla accusamus numquam molestiae dolores tempora beatae ratione, quis repellendus officiis optio illo! Deleniti, minus
-                                deserunt? Explicabo expedita ea, rem amet neque autem dicta laudantium nemo modi? Illo sunt doloribus nemo corrupti pariatur sit praesentium repudiandae, consectetur nobis iure, quasi architecto laborum. Ullam! Est voluptate
-                                corrupti quas totam eaque cum autem inventore. Quae eos asperiores tenetur blanditiis voluptate, labore at sequi a illo, animi mollitia quas, unde odit. Quibusdam praesentium exercitationem laudantium saepe? Ducimus nemo
-                                dolore sit harum vero doloribus iusto exercitationem atque debitis dolor cumque necessitatibus nihil pariatur cupiditate ex nam dolores provident, unde quasi blanditiis aspernatur commodi minus! Repudiandae, expedita facilis.
-                                Natus eveniet, id ab ut doloremque temporibus et similique enim eius corrupti obcaecati odit incidunt quia non. Non, fugit! Rerum iusto, minus expedita voluptatibus optio quos adipisci fuga. Quas, minima! Tempore vel consequuntur
-                                ipsa voluptates, eligendi, perferendis quae facilis illum, atque veritatis optio similique esse! Aliquam, ipsum incidunt tenetur, sed provident velit debitis beatae odit laborum excepturi illo consequuntur qui?</p>
+
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="flex">
+                        <div class="card">
+                            <div class="header">
+                                <div class="title">
+                                    <div class="row content-block">
+                                        <h1>Annual Pass</h1>
+                                        <h6><span>Visit</span> Nexus Aquarium</h6>
+                                    </div>
+                                    <!-- .row .content-block -->
+                                </div>
+                                <!-- .title -->
+                            </div>
+                            <!-- .header -->
+                            <div class="content">
+                                <div class="articlemeta">
+                                    <ul class="left">
+                                        <li><i class="material-icons">&#xE15E;</i></li>
+                                        <li><i class="material-icons">&#xE87D;</i></li>
+                                    </ul>
+                                    <ul class="right">
+                                        <li><i class="material-icons">&#xE80D;</i></li>
+                                    </ul>
+                                </div>
+                                <!-- .articlemeta -->
+                                <div class="closebar">
+                                    <h1>Annual Pass</h1>
+                                    <a href="#0" class="closebttn"><i class="material-icons">&#xE5CD;</i></a>
+                                </div>
+                                <!-- .closebar -->
+                                <div class="row content-block">
+                                    <h3>Annual Pass</h3>
+                                    <p class=intro> There’s so much to explore at Dubai Aquarium and Underwater Zoo. If one day isn’t enough, you’ll love our Annual Pass with unlimited entry for 365 days, with added benefits. Here’s three reasons why you should get your
+                                        annual pass today.</p>
+                                    <img src="img/ticket_06.jpg" width="50%" height="auto" title="eAnnual" alt="e-annual" />
+                                </div>
+                                <!-- .row .content-block -->
+                                <hr>
+                                <div class="row content-block">
+                                    <h3>1. Unlimited admission, value for money</h3>
+                                    Visit the us at least 3 times a year and you will get more than your money’s worth, especially with all the extra perks.
+                                </div>
+                                <!-- .row .content-block -->
+                                <hr>
+                                <div class="row content-block">
+                                    <h3>2. Priority entry + no black-out dates</h3>
+                                    Skip the queues and get right to your marine adventure. And with no black-out dates, you can visit us any time and enjoy your perks even during holidays and festive seasons.
+                                </div>
+                                <!-- .row .content-block -->
+                                <hr>
+                                <div class="row content-block">
+                                    <h3>3. Loads of discounts and privileges</h3>
+
+                                    <ul>
+                                        <li>Unlimited entry to Behind the scenes &amp; Underwater Observatory</li>
+                                        <li>Newsletters so you’ll be the first to know about animal updates, news and promotions</li>
+                                        <li>15% discount on entry for all accompanying family and friends Maximum 4 excluding Member</li>
+                                        <li>15% discount on DAUZ Retail shop</li>
+                                        <li>15% discount on birthday parties</li>
+                                        <li>15% discount on all Magic Memories photo</li>
+                                        <li>10% discount on Shark Dives</li>
+                                        <li>25% discount on Cage Snorkeling Experiences</li>
+                                        <li>20% discount on PADI Courses, dive trips and Al Boom Diving</li>
+                                    </ul>
+                                </div>
+                                <!-- .row .content-block -->
+                                <hr>
+                                <div class="row content-block">
+                                    <br>
+
+                                    <strong>Get your Nexus Aquarium &amp; Underwater Zoo annual pass now</strong>
+                                    <br>
+                                    <hr>
+                                </div>
+                                <!-- .row .content-block -->
+
+                                <div class="row content-block">
+                                    <table border="1" cellpadding="5" cellspacing="1" style="width: 80%" title="Benefits">
+                                        <tbody align="center" valign="middle">
+                                            <tr style="column-width: 40%">
+                                                <td align="left">CHILD
+                                                    <br /><em>3 - 12 yrs old</em></td>
+                                                <td>USD 10</td>
+                                            </tr>
+                                            <tr style="column-width: 30%">
+                                                <td align="left">ADULT</td>
+                                                <td>USD 20</td>
+                                            </tr>
+                                            <tr style="column-width: 30%">
+                                                <td align="left">FAMILY
+                                                    <br /><em>2 Adults</em><br /><em>2 Children</em></td>
+                                                <td>USD 50</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br />
+                                    <br />
+                                </div>
+                                <!-- .row .content-block -->
+
+
+                                <hr>
+                                <div class="row content-block">
+                                    <strong>Terms &amp; Conditions:</strong>
+                                    <p class="small">*Save 25% when you book online (limited time only)
+
+                                        <br/> *Above rate is only valid for bookings made at least one day before visit
+                                        <br/></p>
+                                </div>
+                                <!-- .row .content-block -->
+
+                                <a href="#0" class="bttn">Book Now</a>
+                                <a href="#0" class="readmore"></a>
+                            </div>
+                            <!-- .content -->
                         </div>
-                    </li>
-                    <li>
-                        <div class="content__wrapper">
-                            <h2 class="text-color">Group Booking</h2>
+                        <!-- .card -->
+                    </div>
+                    <!-- .flex -->
+                </div>
+                <!-- .col-md-6 .col-sm-6 .col-xs-12 -->
 
-                            <p>Created by <a class="text-color" href="http://lewihussey.com" target="_blank">Lewi Hussey</a></p>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="flex">
+                        <div class="card">
+                            <div class="header">
+                                <div class="title">
+                                    <div class="row content-block">
+                                        <h1>Group Booking</h1>
+                                        <h6><span>Visit</span> Nexus Aquarium</h6>
+                                    </div>
+                                    <!-- .row .content-block -->
+                                </div>
+                                <!-- .title -->
+                            </div>
+                            <!-- .header -->
+                            <div class="content">
+                                <div class="articlemeta">
+                                    <ul class="left">
+                                        <li><i class="material-icons">&#xE15E;</i></li>
+                                        <li><i class="material-icons">&#xE87D;</i></li>
+                                    </ul>
+                                    <ul class="right">
+                                        <li><i class="material-icons">&#xE80D;</i></li>
+                                    </ul>
+                                </div>
+                                <!-- .articlemeta -->
+                                <div class="closebar">
+                                    <h1>Group Booking</h1>
+                                    <a href="#0" class="closebttn"><i class="material-icons">&#xE5CD;</i></a>
+                                </div>
+                                <!-- .closebar -->
+                                <div class="row content-block">
+                                    <h3>Assured discount on groups of 25 people or more</h3>
+
+                                    <img src="img/ticket_07.jpg" width="50%" height="auto" title="ticket" alt="e-ticket" />
+                                    <p>Dubai Aquarium &amp; Underwater Zoo offers group discounts for groups of 25 people or more (entry only).</p>
+                                    <p>So why not suggest a visit for your next staff function, play group or friends gathering?</p>
+                                </div>
+                                <!-- .row .content-block -->
+                                <div class="row content-block">
+
+                                    <h3>Guided Tours</h3>
+                                    <p>We offer exclusive guided tours for large or small groups. At an additional cost to entry, you can book a guided tour for 1.5 hours to help you explore the wonders of the deep. Advanced bookings essential and subject
+                                        to availability.
+                                        <br/>
+                                    </p>
+                                    <h3>Special Needs Groups</h3>
+                                    <p>For special needs groups, we are able to offer a substantial discount on Entry ticket prices. Advanced Bookings essential, with company/group letter required.
+                                        <br/>
+                                    </p>
+                                    <h3>Tour Operators / Destination Management Companies (DMC's)</h3>
+                                    <p>We work with many tour operators from Nexus and all around the world. If you are interested in adding Nexus Aquarium &amp; Underwater Zoo to your tour company’s itinerary, please email our Sales Department at <strong><a href="mailto:groupsales@emaar.ae">groupsales@emaar.ae</a> or call +971 4 4485257.</strong></p>
+
+                                    <a href="#0" class="bttn">Book Now</a>
+                                    <a href="#0" class="readmore"></a>
+                                </div>
+                                <!-- .row .content-block -->
+                            </div>
+                            <!-- .content -->
                         </div>
-                    </li>
-                </ul>
-            </section>
+                        <!-- .card -->
+                    </div>
+                    <!-- .flex -->
+                </div>
+                <!-- .col-md-6 .col-sm-6 .col-xs-12 -->
 
 
-            <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-            <script src="js/tabbar.js"></script>
+
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+    </div>>
+    <!-- #ticket .page-section -->
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2017 Aptech T11907M0 Team - Design: <a href="http://www.tooplate.com/view/2089-meteor" target="_parent">Meteor</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-icons">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+    </footer>
+    <!-- footer -->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="js/ticket.js"></script>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // navigation click actions 
+            $('.scroll-link').on('click', function(event) {
+                event.preventDefault();
+                var sectionID = $(this).attr("data-id");
+                scrollToID('#' + sectionID, 750);
+            });
+            // scroll to top action
+            $('.scroll-top').on('click', function(event) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 'slow');
+            });
+            // mobile nav toggle
+            $('#nav-toggle').on('click', function(event) {
+                event.preventDefault();
+                $('#main-nav').toggleClass("open");
+            });
+        });
+        // scroll function
+        function scrollToID(id, speed) {
+            var offSet = 50;
+            var targetOffset = $(id).offset().top - offSet;
+            var mainNav = $('#main-nav');
+            $('html,body').animate({
+                scrollTop: targetOffset
+            }, speed);
+            if (mainNav.hasClass("open")) {
+                mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+                mainNav.removeClass("open");
+            }
+        }
+        if (typeof console === "undefined") {
+            console = {
+                log: function() {}
+            };
+        }
+    </script>
 </body>
 
 </html>
