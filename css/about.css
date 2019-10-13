@@ -1,0 +1,141 @@
+#profile-card {
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+#profile-card .section-heading h3 {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+#profile-card figure.snip {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    text-align: center;
+}
+
+#profile-card figure.snip * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#profile-card figure.snip:before,
+#profile-card figure.snip:after {
+    position: absolute;
+    width: 100%;
+    background: #000;
+    height: 0px;
+    display: block;
+    content: '';
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+#profile-card figure.snip:before {
+    top: 0;
+}
+
+#profile-card figure.snip:after {
+    bottom: 0;
+}
+
+#profile-card figure.snip img {
+    max-width: 100%;
+    margin-bottom: -5px;
+}
+
+#profile-card figure.snip figcaption {
+    position: relative;
+    background: white;
+}
+
+#profile-card figure.snip h3,
+#profile-card figure.snip p,
+#profile-card figure.snip h4 {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#profile-card figure.snip h3 {
+    width: 70%;
+    padding: 12px 15px;
+    background: #333333;
+    text-transform: uppercase;
+    transform: translateY(-50%) rotate(0deg) scale(1);
+}
+
+#profile-card figure.snip p {
+    font-size: 1em;
+    font-weight: 500;
+    background: white;
+    color: #888888;
+    padding: 10px 40px 40px;
+}
+
+#profile-card figure.snip h4 {
+    width: 70%;
+    padding: 12px 15px;
+    background: #03c0f0;
+    text-transform: uppercase;
+    transform: translateY(-50%) rotate(0deg) scale(1);
+    color: rgb(230, 253, 21);
+    font-weight: 600;
+}
+
+#profile-card figure.snip a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: white;
+}
+
+#profile-card figure.snip.blue h3,
+#profile-card figure.snip.blue:before,
+#profile-card figure.snip.blue:after {
+    background: #2980b9;
+}
+
+#profile-card figure.snip.red h3,
+#profile-card figure.snip.red:before,
+#profile-card figure.snip.red:after {
+    background: #c0392b;
+}
+
+#profile-card figure.snip.yellow h3,
+#profile-card figure.snip.yellow:before,
+#profile-card figure.snip.yellow:after {
+    background: #f39c12;
+}
+
+#profile-card figure.snip:hover figcaption h3,
+#profile-card figure.snip.hover figcaption h3 {
+    transform: translateY(-50%) rotate(-8deg) scale(1.1);
+}
+
+#profile-card figure.snip:hover:before,
+#profile-card figure.snip.hover:before,
+#profile-card figure.snip:hover:after,
+#profile-card figure.snip.hover:after {
+    height: 10px;
+}
