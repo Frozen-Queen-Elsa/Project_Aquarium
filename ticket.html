@@ -20,7 +20,7 @@
 
 
     <link rel="stylesheet" href="css/ticket.css">
-
+    <link rel="stylesheet" href="css/clock.css">
 
 </head>
 
@@ -36,15 +36,28 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
+
                     <a href="#" class="navbar-brand scroll-top">
                         <div class="logo"></div>
                     </a>
                 </div>
                 <!--.navbar-header -->
+
+                <div id="clock">
+                    <div id="div1">
+                        <p id="time"></p>
+                        <p id="date"></p>
+                    </div>
+                    <!-- .div1 -->
+                </div>
+                <!-- #clock -->
+
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="#" class="scroll-top">Home</a></li>
+                        <li><a href="#" class="scroll-link" data-id="index">Index</a></li>
                         <li><a href="#" class="scroll-link" data-id="about">About Us</a></li>
+                        <li><a href="#" class="scroll-link" data-id="about">Visit Us</a></li>
                         <li><a href="#" class="scroll-link" data-id="portfolio">Portfolio</a></li>
                         <li><a href="#" class="scroll-link" data-id="blog">Blog</a></li>
                         <li><a href="#" class="scroll-link" data-id="contact">Contact Us</a></li>
@@ -68,6 +81,7 @@
             <li class="selected first-slide">
                 <div class="cd-full-width">
                     <div class="tm-slide-content-div slide-caption">
+
                         <span>Introduction to</span>
                         <h2>Nexus Aquarium</h2>
                         <p>One of the biggest aquarium in the world</p>
@@ -152,7 +166,7 @@
                 <div class="col-md-4 col-sm-12 col-xs-12">
                     <div class="flex">
                         <div class="card">
-                            <div class="header">
+                            <div class="card-header" id="card-01">
                                 <div class="title">
                                     <div class="row content-block">
                                         <h1>Ticket Information</h1>
@@ -374,7 +388,7 @@
                 <div class="col-md-4 col-sm-12 col-xs-12">
                     <div class="flex">
                         <div class="card">
-                            <div class="header">
+                            <div class="card-header" id="card-02">
                                 <div class="title">
                                     <div class="row content-block">
                                         <h1>Annual Pass</h1>
@@ -496,7 +510,7 @@
                 <div class="col-md-4 col-sm-12 col-xs-12">
                     <div class="flex">
                         <div class="card">
-                            <div class="header">
+                            <div class="card-header" id="card-03">
                                 <div class="title">
                                     <div class="row content-block">
                                         <h1>Group Booking</h1>
@@ -569,6 +583,19 @@
     <!-- #ticket .page-section -->
 
 
+    <div id="div1">
+        <p id="time"></p>
+        <p id="date"></p>
+    </div>
+
+
+    <div id="event" class="page-section">
+        <div class="container">
+
+        </div>
+    </div>
+
+
     <footer>
         <div class="container">
             <div class="row">
@@ -605,11 +632,11 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script src="js/ticket.js"></script>
+    <script src="js/clock.js"></script>
 
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
     </script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
@@ -658,6 +685,7 @@
             };
         }
     </script>
+
 </body>
 
 </html>

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/fontAwesome.css">
     <link rel="stylesheet" href="css/hero-slider.css">
     <link rel="stylesheet" href="css/tooplate-style.css">
-
+    <link rel="stylesheet" href="css/clock.css">
 
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
@@ -26,6 +26,10 @@
 </head>
 
 <body>
+
+
+
+
     <div class="header">
         <div class="container">
             <nav class="navbar navbar-inverse" role="navigation">
@@ -36,11 +40,21 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+
                     <a href="#" class="navbar-brand scroll-top">
                         <div class="logo"></div>
                     </a>
                 </div>
                 <!--.navbar-header -->
+                <div id="clock">
+                    <div id="div1">
+                        <p id="time"></p>
+                        <p id="date"></p>
+                    </div>
+                    <!-- .div1 -->
+                </div>
+                <!-- #clock -->
+
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="#" class="scroll-top">Home</a></li>
@@ -152,7 +166,7 @@
                         <h4>Easy Booking Ticket</h4>
                         <p>Nexus has everything to keep the entire family happy.You can book online now.</p>
 
-                        <button type="button" class="gradient-button"><a href="test.html">Book Now</a> </button>
+                        <button type="button" class="gradient-button"><a href="ticket.html">Book Now</a> </button>
                     </div>
 
 
@@ -164,7 +178,7 @@
                         <h4>School Trip</h4>
                         <p>We are thrilled that you have chosen the National Aquarium for your school field trip. </p>
 
-                        <button type="button" class="gradient-button"><a href="test.html">Book Now</a> </button>
+                        <button type="button" class="gradient-button"><a href="ticket.html">Book Now</a> </button>
                     </div>
 
                 </div>
@@ -175,7 +189,7 @@
                         <h4>Good Profit</h4>
                         <p>Your aquarium experience will be less 30 percents all day, from Sundays to Wenesdays everyweek . </p>
 
-                        <button type="button" class="gradient-button"><a href="test.html">Book Now</a> </button>
+                        <button type="button" class="gradient-button"><a href="ticket.html">Book Now</a> </button>
                     </div>
 
                 </div>
@@ -186,7 +200,7 @@
                         <h4>Annual Pass</h4>
                         <p>If 1 day isn’t enough, you’ll love our Annual Pass with unlimited entry for 365 days, with added benefits</p>
 
-                        <button type="button" class="gradient-button"><a href="test.html">Book Now</a> </button>
+                        <button type="button" class="gradient-button"><a href="ticket.html">Book Now</a> </button>
                     </div>
 
                 </div>
@@ -225,6 +239,7 @@
             </div>
         </div>
     </div>
+
 
 
     <div id="portfolio" class="page-section">
@@ -540,6 +555,7 @@
             </div>
         </div>
     </footer>
+    <!-- footer -->
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -593,6 +609,7 @@
             };
         }
     </script>
+    <script src="js/clock.js"></script>
 </body>
 
 </html>
