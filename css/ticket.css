@@ -99,22 +99,33 @@
     box-shadow: 0 19px 48px rgba(0, 0, 0, 0.3), 0 15px 32px rgba(0, 0, 0, 0.22);
 }
 
-#ticket .card .header {
+#ticket .card .card-header {
     height: 200px;
     width: 100%;
     background-color: #4426a8;
     position: relative;
-    background-image: url("../img/card_01.jpg");
     background-size: cover;
     background-position: center top;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
 }
 
-#ticket .card .header.collapse {
+#ticket .card #card-01 {
+    background-image: url("../img/card_01.jpg");
+}
+
+#ticket .card #card-02 {
+    background-image: url("../img/card_02.jpg");
+}
+
+#ticket .card #card-03 {
+    background-image: url("../img/card_03.jpg");
+}
+
+#ticket .card .card-header.collapse {
     height: 0px;
 }
 
-#ticket .card .header .title {
+#ticket .card .card-header .title {
     height: 200px;
     display: flex;
     align-items: center;
@@ -123,23 +134,23 @@
     padding: 0px 15px;
 }
 
-#ticket .card .header .title h1 {
+#ticket .card .card-header .title h1 {
     margin: 0px;
-    font-size: 22px;
+    font-size: 23px;
     color: rgba(255, 255, 255, 0.8);
 }
 
-#ticket .card .header .title h6 {
+#ticket .card .card-header .title h6 {
     font-size: 16px;
-    color: #644cad;
+    color: #bb03e9;
     margin: 0;
 }
 
-#ticket .card .header .title h6 span {
+#ticket .card .card-header .title h6 span {
     color: #FFF;
 }
 
-#ticket .card .header:after {
+#ticket .card .card-header:after {
     content: '';
     display: block;
     position: absolute;

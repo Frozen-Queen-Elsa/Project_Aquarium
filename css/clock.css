@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Clock;
+    src: url("../fonts/digital-7.ttf") format(‘truetype’), url("../fonts/fontawesome-webfont.eot") format(’embedded-opentype’), url("../fonts/fontawesome-webfont.woff") format(‘woff’);
+    font-weight: normal;
+    font-style: normal;
+}
+
+#div1 {
+    transform: translateY(33%);
+    position: fixed;
+    top: -0.5%;
+    left: 38%;
+    padding: 0px 5px;
+}
+
+#time {
+    font-family: Clock;
+    font-size: 100%;
+    text-align: center;
+}
+
+#date {
+    font-family: Clock;
+    font-size: 90%;
+    text-align: center;
+}
+
+#time,
+#date {
+    color: rgb(255, 238, 0);
+    font-weight: 600;
+}
+
+.header.active #time,
+.header.active #date {
+    color: #ea00ff;
+}
+
+@media only screen and (max-width: 500px) {
+    #time {
+        font-size: 2em;
+    }
+    #date {
+        font-size: 1em;
+    }
+}
